@@ -1,0 +1,158 @@
+body{
+	background: #FFF;
+	color: #666;
+	margin: 0px;
+}
+
+.tables{
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+img{
+    padding-top: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+h1{
+    background-color: #e7e4e4;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+    text-align: center;
+}
+
+#firstp{   
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+#firstspan{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 8px;
+}
+
+hr{
+	border: none;
+	border-top: 1px solid #CCCCCC;
+	height: 1px;
+	margin-bottom: 25px;
+}
+
+ul#navmenu,
+ul#navmenu li,
+ul#navmenu ul{
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	width: 160px;
+	list-style: none;
+}
+
+ul#navmenu li{
+	display: block !important;
+	display: inline;
+	position: relative;
+}
+
+ul#navmenu a,
+.editbutton,
+.delbutton,
+.addbutton,
+.savebutton{
+	border: 2px solid #FFF;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	padding: 0 6px;
+	display: block;
+	background: #EEE;
+	color: #666;
+	font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	height: auto !important;
+}
+
+ul#navmenu a:hover,
+ul#navmenu li:hover a,
+ul#navmenu li.iehover a{
+	background: #666;
+	color: #FFF;
+}
+
+ul#navmenu li:hover li a,
+ul#navmenu li.iehover li a{
+	background: #666;
+    color: #EEE
+}
+
+ul#navmenu li:hover li a:hover{
+	background: #666;
+	color: #FFF;
+}
+
+ul#navmenu ul,
+ul#navmenu ul ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 160px;
+}
+
+ul#navmenu li:hover ul,
+ul#navmenu ul li:hover ul,
+ul#navmenu li.iehover ul{
+	display: block;
+}
+
+ul#navmenu li:hover ul,
+ul#navmenu ul li:hover ul,
+ul#navmenu li.iehover ul{
+	display: block;
+}
+
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+	width: 100%;
+}
+  
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+h2{
+    text-align: center;
+}
+
+.error{
+	color: rgb(230, 47, 47);
+	font-size: 10px;
+	display: hidden;
+}
+
+.addbutton:hover,
+.editbutton:hover,
+.delbutton:hover,
+.savebutton:hover{
+	background: #666;
+	color: #FFF;
+}
+
+.editbutton,
+.delbutton,
+.savebutton{
+	display: inline-block;
+}

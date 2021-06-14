@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery.js"></script>
+    <script src='script.js'></script>
+    <title>PT School</title>
+</head>
+<body>
+<h1>
+    <img src='img/pt.png' alt='PT'>
+    <p id='firstp'>Minimal school dataspace wow<br><span id='firstspan'>(name subject to change)</span></p>
+</h1>
+<hr />
+<ul id='navmenu'>
+  <li id='students'><a href=students.html>Students</a>
+    <ul id='showstudents'><a href=studentspercourse.html>Students Per Course</a></ul>
+  </li>
+  <li id='trainers'><a href=trainers.html>Trainers</a>
+    <ul id='tpc'><a href=trainerspercourse.html>Trainers Per Course</a></ul>  
+  </li> 
+  <a id='courses' href=courses.html>Courses</a>
+  <li id='ass'><a href=assignments.html>Assignments</a>
+    <ul><li id='apc'><a href=asspercourse.html>Assignments Per Course</a></li>
+        <li id='apspc'><a href=asc.html>Assignments Per Student Per Course</a></li>
+    </ul>  
+  </li> 
+</ul>
+<div class='tables'>
+  <table>
+    <tr>
+      <th>Course ID</th>
+      <th>Title Name</th>
+      <th>Stream</th>
+      <th>Type</th>
+      <th>Starting Date</th>
+      <th>Ending Date</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>CB5</td>
+      <td>C#</td>
+      <td>Part Time</td>
+      <td>2017-05-12</td>
+      <td>2017-08-12</td>
+      <td><button class='editbutton' onclick='courseEdit(this);'>Edit</button><button class='savebutton' onclick='courseSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>CB6</td>
+      <td>Python</td>
+      <td>Full Time</td>
+      <td>2023-10-01</td>
+      <td>2024-04-01</td>
+      <td><button class='editbutton' onclick='courseEdit(this);'>Edit</button><button class='savebutton' onclick='courseSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>CB15</td>
+      <td>Java</td>
+      <td>Part Time</td>
+      <td>2019-10-20</td>
+      <td>2020-04-22</td>
+      <td><button class='editbutton' onclick='courseEdit(this);'>Edit</button><button class='savebutton' onclick='courseSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>CB10</td>
+      <td>Python</td>
+      <td>Part Time</td>
+      <td>2016-12-05</td>
+      <td>2017-05-05</td>
+      <td><button class='editbutton' onclick='courseEdit(this);'>Edit</button><button class='savebutton' onclick='courseSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>CB13</td>
+      <td>C#</td>
+      <td>Full Time</td>
+      <td>2022-09-15</td>
+      <td>2022-12-15</td>
+      <td><button class='editbutton' onclick='courseEdit(this);'>Edit</button><button class='savebutton' onclick='courseSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td><input type='number' name='cid' id='cid' class='clearme' required /></td>
+      <td><input type='text' name='cname' id='cname' class='clearme' required /></td>
+      <td><input type='text' name='cstream' id='cstream' class='clearme' required /></td>
+      <td><input type='text' name='ctype' id='ctype' class='clearme' required /></td>
+      <td><input type='date' name='sdate' id='sdate' class='clearme' /></td>
+      <td><input type='date' name='edate' id='edate' class='clearme' /></td>
+    </tr>
+    <tr>
+      <td><button class='addbutton' onclick="addCourse(); cellClear();">Add course</button></td>
+    </tr>
+  </table> 
+</div>
+</body>
+</html>

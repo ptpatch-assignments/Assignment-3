@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery.js"></script>
+    <script src='script.js'></script>
+    <title>PT School</title>
+</head>
+<body>
+<h1>
+    <img src='img/pt.png' alt='PT'>
+    <p id='firstp'>Minimal school dataspace wow<br><span id='firstspan'>(name subject to change)</span></p>
+</h1>
+<hr />
+<ul id='navmenu'>
+  <li id='students'><a href=students.html>Students</a>
+    <ul id='showstudents'><a href=studentspercourse.html>Students Per Course</a></ul>
+  </li>
+  <li id='trainers'><a href=trainers.html>Trainers</a>
+    <ul id='tpc'><a href=trainerspercourse.html>Trainers Per Course</a></ul>  
+  </li> 
+  <a id='courses' href=courses.html>Courses</a>
+  <li id='ass'><a href=assignments.html>Assignments</a>
+    <ul><li id='apc'><a href=asspercourse.html>Assignments Per Course</a></li>
+        <li id='apspc'><a href=asc.html>Assignments Per Student Per Course</a></li>
+    </ul>  
+  </li> 
+</ul>
+<div class='tables'>
+  <table>
+    <tr>
+      <th>Assignment Description</th>
+      <th>Course Name</th>
+    </tr>
+    <tr>
+      <td>First Thing</td>
+      <td>CB9</td>
+      <td><button class='editbutton' onclick='apcEdit(this);'>Edit</button><button class='savebutton' onclick='apcSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td>Third Thing</td>
+      <td>CB6</td>
+      <td><button class='editbutton' onclick='apcEdit(this);'>Edit</button><button class='savebutton' onclick='apcSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td>First Thing</td>
+      <td>CB10</td>
+      <td><button class='editbutton' onclick='apcEdit(this);'>Edit</button><button class='savebutton' onclick='apcSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td>Second Thing</td>
+      <td>CB13</td>
+      <td><button class='editbutton' onclick='apcEdit(this);'>Edit</button><button class='savebutton' onclick='apcSave();'>Save</button><button class='delbutton' onclick='rowDelete(this);'>Delete</button></td>
+    </tr>
+    <tr>
+      <td><input type='text' name='adesc' id='adesc' class='clearme' required /></td>
+      <td><input type='text' name='cname' id='cname' class='clearme' required /></td>
+    </tr>
+    <tr>
+      <td><button class='addbutton' onclick='addApc(); cellClear();'>Add assignment and course</button></td>
+    </tr>
+  </table> 
+</div>
+</body>
+</html>
